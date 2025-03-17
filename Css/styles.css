@@ -1,9 +1,29 @@
+/*Variables CSS*/
+:root {
+    --body-bg-color: #090909; 
+    --text-color: #ffffff; 
+    --colorh1-color: #ffffff; 
+}
+/*aplicar las variables CSS creadas por el root*/
+/*aplicar las variables CSS creadas por el root*/
 body {
-    background: #000000; /*color de fondo*/
-    color: #fff; /*color de la fuente*/
+    background: var(--body-bg-color); /*color de fondo*/
+    color: var(--text-color); /*color de la fuente*/
+    font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*aplicar las variables CSS creadas por el root*/
+h1,h2{
+    color: var(--colorh1-color); /*color de la fuente*/
+}
+/*
+body {
+    background: #000000;
+    color: #fff; 
     font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-}
+}*/
+
+
 /*Titulo del header*/
 .titulo {
     font-size: 2rem;
@@ -48,6 +68,11 @@ a {
     line-height: 2.5rem; /*espacio entre los parrafos*/
     font-size: large; /*tamaño de la fuente*/
     color: azure; /*color de la fuente*/
+    gap: 5rem; /*espacio entre los elementos*/
+    align-items: center; /*alinea los elementos al centro*/
+}
+.img-perfil {
+    border-radius: 50%; /*bordes redondeados*/
 }
 
 /*Responsive design*/
