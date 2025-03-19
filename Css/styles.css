@@ -1,8 +1,8 @@
 /*Variables CSS*/
 :root {
-    --body-bg-color: #090909; 
+    --body-bg-color: #000000; 
     --text-color: #ffffff; 
-    --colorh1-color: #ffffff; 
+    --colorh1-color: #8f8f9c; 
 }
 /*aplicar las variables CSS creadas por el root*/
 
@@ -70,6 +70,7 @@ a {
     color: azure; /*color de la fuente*/
     gap: 5rem; /*espacio entre los elementos*/
     align-items: center; /*alinea los elementos al centro*/
+   
 }
 .img-perfil {
     border-radius: 50%; /*bordes redondeados*/
@@ -94,6 +95,7 @@ a {
         margin-top: 1rem; /*margen superior*/   
         line-height: 2.5rem; /*espacio entre los parrafos*/
         font-size: small; /*tamaño de la fuente*/
+        flex-direction: column; /*cambia la direccion de los elementos*/
     }
 }
 /* Estilos para pantallas medianas, tablet de 768px a 1024px */
