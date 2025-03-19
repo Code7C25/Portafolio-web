@@ -23,6 +23,12 @@ body {
     
 }*/
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Ajusta el espacio entre secciones */
+}
+
 
 /*Titulo del header*/
 .titulo {
@@ -68,16 +74,33 @@ a {
     line-height: 2.5rem; /*espacio entre los parrafos*/
     font-size: large; /*tamaño de la fuente*/
     color: azure; /*color de la fuente*/
-    gap: 5rem; /*espacio entre los elementos*/
+    gap: 2rem; /*espacio entre los elementos*/
     align-items: center; /*alinea los elementos al centro*/
    
 }
 .img-perfil {
     border-radius: 50%; /*bordes redondeados*/
 }
+.experiencias, .estudios{
+    display: flex;
+    justify-content: center; /*centra el contenido*/
+    margin-top: 3rem; /*margen superior*/
+    color: azure; /*color de la fuente*/
+
+}
+.container-experiencias, .container-estudios{
+    width: 100%; /*ancho del contenedor*/
+    padding: 1rem; /*espacio interno*/
+    margin-top: 2rem; /*margen superior*/
+    line-height: 2rem; /*espacio entre los parrafos*/
+    font-size: large; /*tamaño de la fuente*/
+    margin: 2rem; /*margen superior e inferior*/
+}
+
+
 
 /*Responsive design*/
-/* Media agrupada */
+/* Media Queries agrupadas */
 
 /* Estilos para pantallas pequeñas, celular de 768px o menos */
 @media (max-width: 768px) {
@@ -97,7 +120,20 @@ a {
         font-size: small; /*tamaño de la fuente*/
         flex-direction: column; /*cambia la direccion de los elementos*/
     }
+
+    /*Agregamos el responsive design para la seccion de experiencia y estudios*/
+    .experiencias, .estudios{
+        width: 100%; /*ancho del contenedor*/
+        padding: 1rem; /*espacio interno*/
+        margin-top: 1rem; /*margen superior*/
+        font-size: small; /*tamaño de la fuente*/
+    }
+    .container-experiencias, .container-estudios{
+        width: 100%; /*ancho del contenedor*/
+        margin-top: 0rem; /*margen superior*/           
+    }
 }
+
 /* Estilos para pantallas medianas, tablet de 768px a 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
     .titulo {
@@ -107,7 +143,14 @@ a {
         gap: 2rem; /*espacio entre los elementos*/
         justify-items: center;
     }
+
+    /*Agregamos el responsive design para la seccion de experiencia y estudios*/
+    .experiencias, .estudios{
+        width: 75%; /*ancho del contenedor*/
+    }
 }
+
+
 
 /* Estilos para pantallas grandes, desktop de 1024px o más */
 @media (min-width: 1024px) {
@@ -118,5 +161,9 @@ a {
         gap: 3rem; /*espacio entre los elementos*/
         justify-items: flex-end; /*justifica los elementos a la derecha*/
         margin: 0  3rem; /*margen superior e inferior*/
+    }
+     /*Agregamos el responsive design para la seccion de experiencia y estudios*/
+     .experiencias, .estudios{
+        width: 75%; /*ancho del contenedor*/
     }
 }
