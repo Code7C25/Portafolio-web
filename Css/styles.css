@@ -5,13 +5,13 @@
     --colorh1-color: #ffffff; 
 }
 /*aplicar las variables CSS creadas por el root*/
-/*aplicar las variables CSS creadas por el root*/
+
 body {
     background: var(--body-bg-color); /*color de fondo*/
     color: var(--text-color); /*color de la fuente*/
     font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/*aplicar las variables CSS creadas por el root*/
+
 h1,h2{
     color: var(--colorh1-color); /*color de la fuente*/
 }
