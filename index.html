@@ -1,78 +1,102 @@
 <!-- Es de buena practica comenzar a estructurar nuestros achivos ordenando la estructura para el desarrollo
  en este caso del portafolio web, por lo tanto esta estructura puede variar segun nuestro poryecto-->
-
-<!DOCTYPE html>
-<html lang="es"> <!-- Definir el idioma -->
-<head>
-    <meta charset="UTF-8"> <!-- Definir el tipo de codificación -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- agregamos etiquetas meta para el Seo, y otra del author-->
-    <meta name="description" content="Portafolio web de Tamara Piccinni">
-    <meta name="keywords" content="Portafolio, web, desarrollador web, programación,Contacto">
-    <meta name="author" content="Tu nombre">
-    <title>Portafolio web</title>
-    <link rel="stylesheet" href="./Css/styles.css">
-    <link rel="stylesheet" href="./Css/sobremi.css">
-    <link rel="stylesheet" href="./Css/experiencias.css">
-    <link rel="stylesheet" href="./Css/estudios.css">
-   
-</head>
-<body>
-    <header>
-        <h1>Tamara Piccinni</h1>
-        <nav>
-            <ul class="navigation">
-              
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Experiencias</a></li>
-                <li><a href="#">Mis estudios</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Contacto</a></li>
-            
-            </ul>
-        </nav>
-    </header>
-    <main class="main-container">
-        <section class="sobremi">
-            <article class="container-sobremi">
-                <img class="img-perfil" src="./Assets/perfil.jpg" alt="fotografia de Tamara Piccinni" width="200" height="240">
-                <h2> 
-                    Soy <b>Técnica en Programación</b>
-                    Me apasiona progrmar y desarrollar soluciones de aplicaciones web originales y personalizadas
-                </h2>
-            </article>
-        </section>
-
-    <!-- Sección de experiencias -->
-    <section id="experiencias" class="experiencias">
-        <article class="container-experiencias">
-            <h2>Experiencias</h2>
-            <h3>Desarrollador web</h3>
-            <p>Desarrollo de aplicaciones web con tecnologías como HTML, CSS, JavaScript, MySQL, entre otras.</p>
-            <h3>Auxiliar Docente en la UTN FRSR</h3>
-            <p>Colaboración en el dictado de clases de programación en la Universidad Tecnológica Nacional Facultad Regional San Rafael.
-                Administracióndel campus virtual y corrección de trabajos prácticos.
-                Coordinación del equipo de tutores.
-            </p>
-        </article>
-    </section>
-    <!-- Sección de estudios -->
-    <section id="estudios" class="estudios">
-        <article class="container-estudios">
-            <h2>Mis estudios</h2>
-            <h6>Febrero 2022 - Marzo  2024 </h6>
-            <h3>Título: Técnica Universitaría en Programacíon</h3>
-            <div class="container-estudios-section">
-                <img src="./Assets/utn.png" alt="Logo de la UTN" width="100" height="100">
-                <p>Egresada de la Universidad Tecnológica Nacional Facultad Regional San Rafael con habilidades en: 
-                    Resolución de problemas de procesamiento de datos mediante la selección de algoritmos y técnicas adecuadas.                     
-                    Desarrollo y corrección de programas en lenguajes superiores. 
-                    Colaboración en tareas específicas definidas por el Analista de Sistemas de Computación. 
-                    Análisis, depuración y transferencia de información procesada, metodologías ágiles y trabajo Remoto</p>
-            </div>
-        </article>
-    </section>
+ <!DOCTYPE html>
+ <html lang="es">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+     <!-- SEO y Meta etiquetas -->
+     <meta name="description" content="Portafolio web de Tamara Piccinni">
+     <meta name="keywords" content="Portafolio, web, desarrollador web, programación, contacto">
+     <meta name="author" content="Tamara Piccinni">
+     <meta property="og:title" content="Portafolio de Tamara Piccinni"> 
+     <meta property="og:description" content="Conoce mis proyectos, experiencia y formación en desarrollo web">
+     <meta property="og:image" content="./Assets/perfil.jpg">
+ 
+     <title>Portafolio web | Tamara Piccinni</title>
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="./css/styles.css">
+     <link rel="stylesheet" href="./css/sobremi.css">
+     <link rel="stylesheet" href="./css/experiencias.css">
+     <link rel="stylesheet" href="./css/estudios.css">
+     <link rel="stylesheet" href="./css/proyecto.css">
+ </head>
+ 
+ <body>
+     <header>
+         <h1>Tamara Piccinni</h1>
+         <!-- Menú de navegación responsivo -->
+         <nav>
+             <ul class="navigation">
+                 <li><a href="#sobremi">Sobre mí</a></li>
+                 <li><a href="#experiencias">Experiencias</a></li>
+                 <li><a href="#estudios">Mis estudios</a></li>
+                 <li><a href="#proyectos">Proyectos</a></li>
+                 <li><a href="#contacto">Contacto</a></li>
+             </ul>
+         </nav>
+     </header>
+ 
+     <main class="main-container">
+         <!-- Sección Sobre Mí -->
+         <section id="sobremi" class="sobremi">
+             <article class="container-sobremi">
+                 <img class="img-perfil" src="./Assets/perfil.jpg" alt="Foto de Tamara Piccinni" width="200" height="240">
+                 <h2>Soy <b>Técnica Universitaria en Programación</b></h2>
+                 <p>Me apasiona programar y desarrollar soluciones web creativas y funcionales.</p>
+             </article>
+         </section>
+ 
+         <!-- Sección de Experiencias -->
+         <section id="experiencias" class="experiencias">
+             <article class="container-experiencias">
+                 <h2>Experiencias</h2>
+                 <h3>Desarrolladora Web</h3>
+                 <p>Desarrollo de aplicaciones web con tecnologías como HTML, CSS, JavaScript y MySQL.</p>
+                 <h3>Auxiliar Docente en la UTN FRSR</h3>
+                 <p>Coordinación de tutores, administración del campus virtual y corrección de trabajos prácticos.</p>
+             </article>
+         </section>
+ 
+         <!-- Sección de Estudios -->
+         <section id="estudios" class="estudios">
+             <article class="container-estudios">
+                 <h2>Mis estudios</h2>
+                 <h3>Título: Técnica Universitaria en Programación</h3>
+                 <h4>Febrero 2022 - Marzo 2024</h4>
+                 <div class="container-estudios-section">
+                     <img src="./Assets/utn.png" alt="Logo de la UTN" width="100" height="100">
+                     <p>Egresada de la Universidad Tecnológica Nacional. Desarrollo y corrección de programas, metodologías ágiles y trabajo remoto.</p>
+                 </div>
+             </article>
+         </section>
+ 
+         <!-- Sección de Proyectos -->
+         <section id="proyectos" class="proyectos">
+             <h2>Proyectos</h2>
+             <div class="galeria-proyectos">
+                 <div class="proyecto">
+                     <img src="./Assets/proyecto1.jpg" alt="Vista previa del Proyecto 1">
+                     <h3>Proyecto 1</h3>
+                     <p>Aplicación web interactiva con funcionalidades dinámicas.</p>
+                     <a href="#">Ver más</a>
+                     <a href="#">GitHub</a>
+                     <a href="#">Tecnologías usadas</a>
+                 </div>
+                 <div class="proyecto">
+                     <img src="./Assets/proyecto2.jpg" alt="Vista previa del Proyecto 2">
+                     <h3>Proyecto 2</h3>
+                     <p>Aplicación de gestión con frontend y backend integrados.</p>
+                     <a href="#">Ver más</a>
+                     <a href="#">GitHub</a>
+                     <a href="#">Tecnologías usadas</a>
+                 </div>
+             </div>
+         </section>
     </main>
 </body>
+
 </html>
