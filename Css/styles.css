@@ -1,21 +1,26 @@
 /*Variables CSS*/
 :root {
-    --body-bg-color: #000000; 
-    --text-color: #ffffff; 
-    --colorh1-color: #8f8f9c; 
+    --body-bg-color: #000000; /*color de fondo*/
+    --text-color: #ffffff; /*color de la fuente*/
+    --colorh1-color: #f5f5f5; /*color de la fuente*/
+    --fondo-proyectos: #000000; /*color de fondo de la tarjeta*/
+    --btn-bg-color: #1a1919; /*color de fondo de los botones*/
+    --btn-hover-bg-color: #333333; /* Sombra más clara en los botones */
+    --highlight-color: #5f069a; /*color de resaltado*/
 }
 /*aplicar las variables CSS creadas por el root*/
 
 body {
-    /*display: flex; /*flexbox - parte4*/
-    /*flex-direction: column; /*direccion de los elementos -parte4 */
+    display: flex; /*flexbox - parte4*/
+    flex-direction: column; /*direccion de los elementos -parte4 */
     background: var(--body-bg-color); /*color de fondo*/
     color: var(--text-color); /*color de la fuente*/
     font-family: 'Segoe', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
 h1,h2{
-    color: var(--colorh1-color); /*color de la fuente*/
+    color: var(--colorh1-color); /*color de los títulos*/
 }
 /*
 body {
@@ -25,24 +30,31 @@ body {
     
 }*/
 
+/* estilo de la barra de navegacion*/
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agregar transición suave */
+}
+
+a:hover {
+    color: var(--highlight-color); /* Resaltar al pasar el cursor */
+}
 
 /*Titulo del header*/
 .titulo {
-    display: flex; /*flexbox*/
-    margin: 3rem; /*margen superior e inferior*/
-   /* font-size: 2rem;
-    text-align: center;
-    margin: 1rem;*/
+    display: flex; /* Flexbox */
+    margin: 3rem; /* Margen superior e inferior */
+    justify-content: center; /* Centrado en pantallas pequeñas */
 }
+
 /*barra de navegacion*/
 .navigation {
     display: flex; /*flexbox*/
     gap: 3rem; /*espacio entre los elementos*/
     list-style: none; /*quita los puntos de la lista*/
     justify-content: flex-end; /*justifica los elementos a la derecha*/
-    margin: 0  3rem; /*margen superior e inferior*/
-   /* overflow: hidden; /*oculta los elementos que sobresalen*/
-    
+    margin: 0  3rem; /*margen superior e inferior*/    
 }
 /* enlaces de la barra de navegacion*/
 .navigation li {
@@ -51,19 +63,26 @@ body {
     text-align: center;
     padding: 0.5rem; /*espacio interno*/
     border-radius: 0.5rem; /*bordes redondeados*/
-    background: #1a1919; /*color de fondo*/
-    box-shadow: 0 0 0.5rem #a3a3a3; /*sombra*/
+    background: var(--btn-bg-color); /* Color de fondo */
+    box-shadow: 0 0 0.5rem #a3a3a3; /* Sombra */
+    transition: background-color 0.3s ease; /* Transición suave */
 }
-/* estilo de la barra de navegacion*/
-a {
-    text-decoration: none;
-    color: #fff;
+
+/* al pasar el cursor por los enlaces de la barra de navegacion cambia el color*/
+.navigation li:hover {
+    background-color: var(--btn-hover-bg-color); /* Color al pasar el cursor */
 }
 
 /*Todos los elementos dentro del contenedor principal*/
 .main-container {
     display: flex; /*flexbox*/
     flex-direction: column; /*direccion de los elementos*/
+    gap: 1rem; /* Ajuste menor espacio entre secciones */
+}
+
+/* Estilos generales para las secciones */
+section {
+    padding: 2rem 0;
 }
 
 /*Responsive design*/
@@ -103,3 +122,4 @@ a {
         margin: 0  3rem; /*margen superior e inferior*/
     } 
 }
+
