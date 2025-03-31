@@ -1,18 +1,15 @@
 /*Estilos de la seccion de proyectos*/
 .proyectos{
-    width: 80%; /*ancho del contenedor*/
-    margin: 0 auto; /*centra el contenedor*/    
-    padding: 2rem; /*espacio interno*/
-    background: var(--fondo-proyectos); /*color de fondo*/  
+    width: 80%; /*ancho del contenedor*/    
+    background: var(--fondo-proyectos); /*color de fondo*/    
     
 }
 /*contenedor general que engloba los proyectos*/
  .galeria-proyectos{
     display: flex;
     flex-wrap: wrap; /*envuelve los elementos*/
-    gap: 2rem; /*espacio entre los elementos*/
-    justify-content: center; /*centra el contenido*/
-    margin-top: 2rem; /* Espacio superior */
+    gap: 1rem; /*espacio entre los elementos*/
+    justify-content: center; /*centra el contenido*/    
 }
 /*Como es el contenedor de cada proyecto*/
 .proyecto{

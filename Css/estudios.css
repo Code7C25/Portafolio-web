@@ -9,9 +9,9 @@
 /*contenedor general que engloba los estudios*/
 .container-estudios {
     width: 100%; /*ancho del contenedor*/
-    padding: 1rem; /*espacio interno*/
+    padding: 2rem; /*espacio interno*/
     margin-top: 1rem; /*margen superior*/
-    line-height: 2.5rem; /*espacio entre los parrafos*/
+    line-height: 2rem; /*espacio entre los parrafos*/
     font-size: large; /*tamaño de la fuente*/
     margin: 5rem; /*margen superior e inferior*/
    
@@ -58,7 +58,7 @@
 /* Estilos para pantallas grandes, desktop de 1024px o más */
 @media (min-width: 1024px) {
     .estudios {
-        width: 75%; /* Ancho del contenedor */
+        width: 100%; /* Ancho del contenedor */
         padding: 2rem; /* Espacio interno adecuado */
     }
 

@@ -49,12 +49,19 @@
 /* Estilos para pantallas grandes, desktop de 1024px o más */
 @media (min-width: 1024px) {
     .experiencias {
-        width: 75%; /* Ancho del contenedor */
+        width: 100%; /* Ancho del contenedor */
         padding: 2rem; /* Espacio interno adecuado */
     }
 
     .container-experiencias {
         font-size: 1.3rem; /* Tamaño de fuente más grande */
     }
-    
+    .titulo {
+        justify-content: flex-start;
+    }
+    .navigation {
+        gap: 3rem;
+        justify-content: flex-end;
+        margin: 0 3rem;
+}
 }
