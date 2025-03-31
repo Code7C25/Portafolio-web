@@ -77,13 +77,15 @@ a:hover {
 .main-container {
     display: flex; /*flexbox*/
     flex-direction: column; /*direccion de los elementos*/
-    gap: 1rem; /* Ajuste menor espacio entre secciones */
+    align-items: center; /*Agregado clase 5 flexbox*/
 }
 
 /* Estilos generales para las secciones */
 section {
     padding: 2rem 0;
 }
+
+
 
 /*Responsive design*/
 /* Media Queries agrupadas */
